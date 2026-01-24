@@ -31,12 +31,12 @@ class QuickNoteApp extends StatelessWidget {
           elevation: 0,
           scrolledUnderElevation: 1,
         ),
-        cardTheme: CardTheme(
+        cardTheme: const CardThemeData(
           elevation: 1,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.all(Radius.circular(8)),
           ),
-          margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           elevation: 2,
@@ -53,12 +53,12 @@ class QuickNoteApp extends StatelessWidget {
           elevation: 0,
           scrolledUnderElevation: 1,
         ),
-        cardTheme: CardTheme(
+        cardTheme: const CardThemeData(
           elevation: 1,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.all(Radius.circular(8)),
           ),
-          margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           elevation: 2,
