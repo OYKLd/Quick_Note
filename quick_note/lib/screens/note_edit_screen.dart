@@ -35,13 +35,16 @@ class _NoteEditScreenState extends State<NoteEditScreen> {
   }
 
   void _saveNote() {
-    if (_titleController.text.trim().isNotEmpty ||
+    if (_titleController.text.trim().isNotEmpty || 
         _contentController.text.trim().isNotEmpty) {
       widget.onSave?.call(
         _titleController.text,
         _contentController.text,
       );
-      Navigator.of(context).pop();
+      Navigator.of(context).pop({
+        'title': _titleController.text,
+        'content': _contentController.text,
+      });
     }
   }
 
